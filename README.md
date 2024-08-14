@@ -44,3 +44,46 @@ if operacao == '-' or operacao == '+':
 
 ```
 
+# Here's the new and better version of my calculator!!!
+
+<p>Here's the code for it:</p>
+
+```
+''' Calculadora com Python '''
+
+while True:
+
+  numero_1 = input('Digite um número: ')
+  numero_2 = input('Digite outro número: ')
+  operador = input('Escolha um operador [+], [-], [/] ou [*]: ')
+
+  num_1_float = float(numero_1)
+  num_2_float = float(numero_2)
+
+  if operador == '+':
+    soma = num_1_float + num_2_float
+    print(f'{numero_1} + {numero_2} = {soma:.0f}')
+
+  if operador == '-':
+    subtracao = num_1_float - num_2_float
+    print(f'{numero_1} - {numero_2} = {subtracao:.0f}')
+
+  if operador == '/':
+    divisao = num_1_float / num_2_float
+    print(f'{numero_1} / {numero_2} = {divisao:.0f}')
+
+  if operador == '*':
+    multiplicacao = num_1_float * num_2_float
+    print(f'{numero_1} * {numero_2} = {multiplicacao:.0f}')
+
+  sair = input('Você deseja [s]air?: ').lower().startswith('s')
+
+  if sair:
+    print('Você saiu')
+    break
+
+```
+
+<img>![Screenshot 2024-08-14 193421](https://github.com/user-attachments/assets/8eb98680-753e-44d0-9bec-a67e9a0a93c6)
+
+
